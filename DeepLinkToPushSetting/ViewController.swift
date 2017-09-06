@@ -7,19 +7,34 @@
 //
 
 import UIKit
+import UserNotifications
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UNUserNotificationCenterDelegate {
+    
+    @IBAction func reloadButton(_ sender: UIButton) {
+        PushNotificationSettings.shared.pushPermissionState(self)
+    }
+    
+    @IBAction func linkToSettingButton(_ sender: UIButton) {
+        PushNotificationSettings.shared.linkToSettingsScreen()
+    }
+    
+    @IBOutlet weak var settingStatusLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        PushNotificationSettings.shared.pushNotificationRequest()
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        PushNotificationSettings.shared.pushPermissionState(self)
+    }
 }
 

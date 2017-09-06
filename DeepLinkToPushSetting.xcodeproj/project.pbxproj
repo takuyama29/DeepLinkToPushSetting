@@ -12,6 +12,7 @@
 		3180B2CE1F5FB95A00A62E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3180B2CC1F5FB95A00A62E8C /* Main.storyboard */; };
 		3180B2D01F5FB95A00A62E8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3180B2CF1F5FB95A00A62E8C /* Assets.xcassets */; };
 		3180B2D31F5FB95A00A62E8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3180B2D11F5FB95A00A62E8C /* LaunchScreen.storyboard */; };
+		3180B2DB1F5FBD2D00A62E8C /* PushNotificationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3180B2DA1F5FBD2D00A62E8C /* PushNotificationSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3180B2CF1F5FB95A00A62E8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3180B2D21F5FB95A00A62E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3180B2D41F5FB95A00A62E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3180B2DA1F5FBD2D00A62E8C /* PushNotificationSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				3180B2C81F5FB95A00A62E8C /* AppDelegate.swift */,
 				3180B2CA1F5FB95A00A62E8C /* ViewController.swift */,
+				3180B2DA1F5FBD2D00A62E8C /* PushNotificationSettings.swift */,
 				3180B2CC1F5FB95A00A62E8C /* Main.storyboard */,
 				3180B2CF1F5FB95A00A62E8C /* Assets.xcassets */,
 				3180B2D11F5FB95A00A62E8C /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				3180B2CB1F5FB95A00A62E8C /* ViewController.swift in Sources */,
 				3180B2C91F5FB95A00A62E8C /* AppDelegate.swift in Sources */,
+				3180B2DB1F5FBD2D00A62E8C /* PushNotificationSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +306,7 @@
 				3180B2D91F5FB95A00A62E8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
